@@ -75,8 +75,7 @@ h1 {
 }
 
 .size-toggle {
-  display: flex;
-  gap: 10px;
+  display: none;
 }
 
 .size-button {
@@ -104,22 +103,17 @@ h1 {
 .board {
   display: grid;
   gap: 5px;
-  width: 300px;
-  height: 300px;
+  width: 360px;
+  height: 360px;
 }
 
-.board-3 {
-  grid-template-columns: repeat(3, 1fr);
-  grid-template-rows: repeat(3, 1fr);
+.board-6 {
+  grid-template-columns: repeat(6, 1fr);
+  grid-template-rows: repeat(6, 1fr);
 }
 
-.board-5 {
-  grid-template-columns: repeat(5, 1fr);
-  grid-template-rows: repeat(5, 1fr);
-}
-
-.board-5 .cell {
-  font-size: 2rem;
+.board-6 .cell {
+  font-size: 1.5rem;
 }
 
 .cell {
@@ -194,4 +188,11 @@ h1 {
   background-color: #4CAF50;
   color: white;
   border-color: #4CAF50;
+}
+
+h2 {
+  font-size: 1rem;
+  color: #555;
+  margin-top: -5px;
+  margin-bottom: 15px;
 } 
