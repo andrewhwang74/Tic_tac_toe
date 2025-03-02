@@ -67,13 +67,59 @@ h1 {
   color: #333;
 }
 
+.controls {
+  display: flex;
+  flex-direction: column;
+  gap: 10px;
+  margin-bottom: 15px;
+}
+
+.size-toggle {
+  display: flex;
+  gap: 10px;
+}
+
+.size-button {
+  padding: 8px 16px;
+  font-size: 0.9rem;
+  background-color: #f0f0f0;
+  color: #333;
+  border: 1px solid #ccc;
+  border-radius: 4px;
+  cursor: pointer;
+  transition: all 0.2s ease;
+}
+
+.size-button:hover {
+  background-color: #e0e0e0;
+}
+
+.size-button.active {
+  background-color: #4CAF50;
+  color: white;
+  border-color: #4CAF50;
+}
+
+/* Board sizes */
 .board {
   display: grid;
-  grid-template-columns: repeat(3, 1fr);
-  grid-template-rows: repeat(3, 1fr);
   gap: 5px;
   width: 300px;
   height: 300px;
+}
+
+.board-3 {
+  grid-template-columns: repeat(3, 1fr);
+  grid-template-rows: repeat(3, 1fr);
+}
+
+.board-5 {
+  grid-template-columns: repeat(5, 1fr);
+  grid-template-rows: repeat(5, 1fr);
+}
+
+.board-5 .cell {
+  font-size: 2rem;
 }
 
 .cell {
